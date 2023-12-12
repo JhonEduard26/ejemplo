@@ -85,3 +85,9 @@ body {
     opacity: 0;
   }
 }
+.card-body-1:hover,
+.card-body-2:hover,
+.card-body-3:hover,
+.card-body-4:hover {
+  color: var(--grayish-purple);
+}
