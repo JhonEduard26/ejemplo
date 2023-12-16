@@ -15,7 +15,7 @@
 body {
   font-size: 16px;
   color: var(--dark-purple);
-  background-image: url(./assets/images/background-pattern-mobile.svg);
+  background-image: url(../assets/images/background-pattern-mobile.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-position-y: top;
@@ -90,4 +90,42 @@ body {
 .card-body-3:hover,
 .card-body-4:hover {
   color: var(--grayish-purple);
+}
+
+@media only screen and (min-width: 768px) {
+  /* Dentro de la regla @media para escritorio */
+  .card-container {
+    max-width: 1200px; /* o el valor que desees */
+  }
+
+  .card {
+    width: 100%;
+    max-width: 800px; /* o el valor que desees */
+  }
+  /* Dentro de la regla @media para escritorio */
+  .card {
+    margin: 0 auto; /* Centra la tarjeta en pantallas más grandes */
+  }
+
+  .card-title {
+    justify-content: center; /* Centra el título */
+  }
+
+  .card-subtitle {
+    justify-content: space-between;
+  }
+  /* Dentro de la regla @media para escritorio */
+  body {
+    font-size: 18px; /* Ajusta el tamaño de la fuente principal */
+  }
+
+  .card-title,
+  .card-subtitle,
+  .card-parragraph {
+    font-size: 18px; /* Ajusta el tamaño de la fuente en las tarjetas */
+  }
+  body {
+    box-sizing: 18px;
+    background-image: url(../assets/images/background-pattern-desktop.svg);
+  }
 }
